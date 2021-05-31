@@ -1,0 +1,214 @@
+<html lang="en"><head>
+    <title>Railway Route Optimiser</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="epicbnwlogo.png" rel="icon" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="super.css">
+    
+
+    <style>
+        .image{
+            padding-left: 60px;
+            text-align: center;
+        }
+    </style>
+ 
+</head>
+<body>
+
+<section class="section-login-page">
+    <div class="limiter">
+        <div class="container-login100-login">
+            <div class="wrap-login100-login">
+                <div class="login100-login">              
+                   <div class="image"> 
+                       
+                       <img alt="IMG" src="epicbnwlogo.png">
+                    </div>
+                </div>
+
+
+                <form class="login100-formlgn validate-form">
+                    <span class="login100-form-title-login">
+                       User Login 
+                    </span>
+
+                    <div class="wrap-input100-login validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                        <input name="email"  class="input100" id="email" type="text" placeholder="Email">
+                        <span class="focus-input100"></span>
+                      
+                    </div>
+
+                    <div class="wrap-input100-login validate-input" data-validate="Password is required">
+                        <input name="pass"  class="input100" id="password" type="password" placeholder="Password">
+                        <span class="focus-input100"></span>
+                   
+                    </div>
+
+                    <div class="login-button">
+                        <a href="#" class="login100-form-btn" id="login-id">
+                            Login
+                        </a>
+                        
+                    </div>
+
+                    <div class="text-center-login p-t-12">
+                        <span class="txt1">
+                            Forgot
+                        </span>
+                        <a class="txt3" href="#">
+                            Username / Password?
+                        </a>
+                    </div>
+                    <div class="text-center-login p-t-46">
+                        <a class="txt2" href="#">
+                            Create your Account
+                            <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="login-modal">
+        <i class="fas fa-times"></i>
+        Please doule check the entered data and try again
+    </div>
+</section>
+<section class="section-search-page">
+    <div class="limiter">
+        <div class="container-login100">
+             
+            <div class="wrap-login100">
+                
+                <div class="login100search"> 
+                    
+               <form class="login100-form validate-form">
+                    <span class="login100-form-title">
+               Search For A Train 
+                    </span>
+
+                    <div class="wrap-input100 validate-input" data-validate="Valid source is required: ex@abc.xyz">
+                        <input name="source" class="input100" id="source" type="text" placeholder="Enter Source">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Valid destination is required">
+                        <input name="destination" class="input100" id="destination" type="text" placeholder="Enter Destination">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <div class="login-button">
+                            <a href="#" class="login100-form-btn-search">
+                               Search 
+                            </a>
+                            <div class="navigation-wrap-search"> 
+                                <div class="login-button">
+                                <a href="" class="login100-form-btn-result">
+                                   back
+                                </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="login-modal-search">
+    <i class="fas fa-times"></i>
+    Please check the input 
+    </div>
+
+</section>
+<section class="section-result-page">
+    <div class="limiter">
+        <div class="container-login100-result">
+            <div class="wrap-login100-result">
+
+                <div class="header">
+                    <span class="login100-form-title-result">
+                       Search Results
+                    </span>
+                    <hr class="horline">
+                </div>
+                
+                <div class="wrap-table">
+                  <table class="table1">
+                     <p class="para"> Journey Details</p>
+                    <tr class="row1">
+                      <th>Source Station</th>
+                      <th>Via Station</th>
+                      <th>Destination Station</th>                      
+                      <th>Distance( kms )</th>                      
+                    </tr>
+                
+                  <tr class="row2">
+                      <td class="row2Data1">----</td>
+                      <td class="row2Data2">---</td>
+                      <td class="row2Data3">---</td>
+                      <td class="row2Data4">----</td>
+                  </tr>
+
+                  </table>
+                  <table class="table2">
+                    <p class="para"> Train Details</p>
+                
+                    <tr class="row3">
+                      <th>Train No : Train Name/s</th>                  
+                      <th>Travel Duration (day/s : hour/s)</th>                      
+                    </tr>
+                
+                  <tr class="row4">
+                      <td class="row4Data5" id="viatrain"></td>
+                      <td class="row4Data6">-----</td>
+                  </tr>
+
+                  </table>
+                </div>             
+               <!--  <div class="via-train-details">
+
+                   <span class="login100-form-title-bottom">
+                    Via Stations and Via Train Details<br>( mandatory route if required )
+                 </span> 
+                 
+                </div> -->
+                <div class="navigation">
+                   <div class="label">
+                       <div>Go </div>   
+                       <div>Back </div>   
+                       <div>To:</div>  
+                    </div> 
+                 <div class="navigation-wrap"> 
+                     <div class="login-button">
+                     <a href="#" class="login100-form-btn-result-searchbtn">
+                        Search
+                     </a>
+                  </div>
+                </div>
+            </div>
+               
+                <div class="login-button-logout">
+                    <a href="#" class="login100-form-btn-result-logoutbtn">
+                        Logout 
+                    </a>
+                </div>           
+            </div>
+        </div>
+    </div>
+    <div></div>
+
+</section>
+<script src="script.js"></script>
+<!-- <script src="scrit_dijkstraw.js"></script> -->
+</body></html>
